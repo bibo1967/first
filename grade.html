@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> Marks </td>
+                <td> <input type ="text" id= "Marks"></td>
+            </tr>
+            <tr>   
+                <td> Grade </td> 
+                <td id="grade"></td>
+            </tr>
+            <tr>   
+                <td colspan="2"> <input  type="button" value = "calculte Grade"  onclick = " claculteGrade()"> </td>    
+            </tr>
+        </table> 
+   <script>
+        function claculteGrade(){   
+            var marks=document.getElementById("Marks").value;
+            console.log(marks);
+            if(marks >= 90) { 
+                document.getElementById("grade").innerHTML= "A"; 
+            }else if(marks>=80){
+                document.getElementById("grade").innerHTML= "B";   
+            }else{
+                document.getElementById("grade").innerHTML= "F";
+            } 
+        }
+
+    
+   </script>
+</body>
+</html>
